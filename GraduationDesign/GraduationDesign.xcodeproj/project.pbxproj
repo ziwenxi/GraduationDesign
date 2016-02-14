@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE6C6DAA1C706298002EA3E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DA91C706298002EA3E7 /* main.m */; };
+		BE6C6DAD1C706299002EA3E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DAC1C706299002EA3E7 /* AppDelegate.m */; };
+		BE6C6DB01C706299002EA3E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DAF1C706299002EA3E7 /* ViewController.m */; };
+		BE6C6DB31C706299002EA3E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6C6DB11C706299002EA3E7 /* Main.storyboard */; };
+		BE6C6DB51C706299002EA3E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6C6DB41C706299002EA3E7 /* Assets.xcassets */; };
+		BE6C6DB81C706299002EA3E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6C6DB61C706299002EA3E7 /* LaunchScreen.storyboard */; };
+		BE6C6DC31C706299002EA3E7 /* GraduationDesignTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DC21C706299002EA3E7 /* GraduationDesignTests.m */; };
+		BE6C6DCE1C706299002EA3E7 /* GraduationDesignUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DCD1C706299002EA3E7 /* GraduationDesignUITests.m */; };
+		BE6C6DDF1C706415002EA3E7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DDC1C706415002EA3E7 /* LoginViewController.m */; };
+		BE6C6DE01C706415002EA3E7 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DDE1C706415002EA3E7 /* SignupViewController.m */; };
+		EBEEF9672934E32CD3884081 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7851071021E052606C4B1437 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE6C6DBF1C706299002EA3E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6C6D9D1C706298002EA3E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE6C6DA41C706298002EA3E7;
+			remoteInfo = GraduationDesign;
+		};
+		BE6C6DCA1C706299002EA3E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6C6D9D1C706298002EA3E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE6C6DA41C706298002EA3E7;
+			remoteInfo = GraduationDesign;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7851071021E052606C4B1437 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2D25BFA8DDA1D4F8BB5134 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BE6C6DA51C706298002EA3E7 /* GraduationDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraduationDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6C6DA91C706298002EA3E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE6C6DAB1C706299002EA3E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE6C6DAC1C706299002EA3E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE6C6DAE1C706299002EA3E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE6C6DAF1C706299002EA3E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE6C6DB21C706299002EA3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE6C6DB41C706299002EA3E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE6C6DB71C706299002EA3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE6C6DB91C706299002EA3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6C6DBE1C706299002EA3E7 /* GraduationDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraduationDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6C6DC21C706299002EA3E7 /* GraduationDesignTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraduationDesignTests.m; sourceTree = "<group>"; };
+		BE6C6DC41C706299002EA3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6C6DC91C706299002EA3E7 /* GraduationDesignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraduationDesignUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6C6DCD1C706299002EA3E7 /* GraduationDesignUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraduationDesignUITests.m; sourceTree = "<group>"; };
+		BE6C6DCF1C706299002EA3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6C6DDB1C706415002EA3E7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BE6C6DDC1C706415002EA3E7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BE6C6DDD1C706415002EA3E7 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		BE6C6DDE1C706415002EA3E7 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		D11B534068802C3E424ADCBB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE6C6DA21C706298002EA3E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBEEF9672934E32CD3884081 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6C6DBB1C706299002EA3E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6C6DC61C706299002EA3E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89078014B6EDE6A7406FDDB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F2D25BFA8DDA1D4F8BB5134 /* Pods.debug.xcconfig */,
+				D11B534068802C3E424ADCBB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		989E398CE9690ECD0D03C8AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7851071021E052606C4B1437 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE6C6D9C1C706298002EA3E7 = {
+			isa = PBXGroup;
+			children = (
+				BE6C6DA71C706298002EA3E7 /* GraduationDesign */,
+				BE6C6DC11C706299002EA3E7 /* GraduationDesignTests */,
+				BE6C6DCC1C706299002EA3E7 /* GraduationDesignUITests */,
+				BE6C6DA61C706298002EA3E7 /* Products */,
+				89078014B6EDE6A7406FDDB0 /* Pods */,
+				989E398CE9690ECD0D03C8AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE6C6DA61C706298002EA3E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C6DA51C706298002EA3E7 /* GraduationDesign.app */,
+				BE6C6DBE1C706299002EA3E7 /* GraduationDesignTests.xctest */,
+				BE6C6DC91C706299002EA3E7 /* GraduationDesignUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE6C6DA71C706298002EA3E7 /* GraduationDesign */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C6DAB1C706299002EA3E7 /* AppDelegate.h */,
+				BE6C6DAC1C706299002EA3E7 /* AppDelegate.m */,
+				BE6C6DDB1C706415002EA3E7 /* LoginViewController.h */,
+				BE6C6DDC1C706415002EA3E7 /* LoginViewController.m */,
+				BE6C6DAE1C706299002EA3E7 /* ViewController.h */,
+				BE6C6DAF1C706299002EA3E7 /* ViewController.m */,
+				BE6C6DDD1C706415002EA3E7 /* SignupViewController.h */,
+				BE6C6DDE1C706415002EA3E7 /* SignupViewController.m */,
+				BE6C6DB11C706299002EA3E7 /* Main.storyboard */,
+				BE6C6DB41C706299002EA3E7 /* Assets.xcassets */,
+				BE6C6DB61C706299002EA3E7 /* LaunchScreen.storyboard */,
+				BE6C6DB91C706299002EA3E7 /* Info.plist */,
+				BE6C6DA81C706298002EA3E7 /* Supporting Files */,
+			);
+			path = GraduationDesign;
+			sourceTree = "<group>";
+		};
+		BE6C6DA81C706298002EA3E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C6DA91C706298002EA3E7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE6C6DC11C706299002EA3E7 /* GraduationDesignTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C6DC21C706299002EA3E7 /* GraduationDesignTests.m */,
+				BE6C6DC41C706299002EA3E7 /* Info.plist */,
+			);
+			path = GraduationDesignTests;
+			sourceTree = "<group>";
+		};
+		BE6C6DCC1C706299002EA3E7 /* GraduationDesignUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C6DCD1C706299002EA3E7 /* GraduationDesignUITests.m */,
+				BE6C6DCF1C706299002EA3E7 /* Info.plist */,
+			);
+			path = GraduationDesignUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE6C6DA41C706298002EA3E7 /* GraduationDesign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6C6DD21C706299002EA3E7 /* Build configuration list for PBXNativeTarget "GraduationDesign" */;
+			buildPhases = (
+				ED7A964870017D6FFE32D814 /* Check Pods Manifest.lock */,
+				BE6C6DA11C706298002EA3E7 /* Sources */,
+				BE6C6DA21C706298002EA3E7 /* Frameworks */,
+				BE6C6DA31C706298002EA3E7 /* Resources */,
+				26D1C819D857D914D5495FE1 /* Embed Pods Frameworks */,
+				CA6F5648E5308AFEF5FC5E07 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraduationDesign;
+			productName = GraduationDesign;
+			productReference = BE6C6DA51C706298002EA3E7 /* GraduationDesign.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE6C6DBD1C706299002EA3E7 /* GraduationDesignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6C6DD51C706299002EA3E7 /* Build configuration list for PBXNativeTarget "GraduationDesignTests" */;
+			buildPhases = (
+				BE6C6DBA1C706299002EA3E7 /* Sources */,
+				BE6C6DBB1C706299002EA3E7 /* Frameworks */,
+				BE6C6DBC1C706299002EA3E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE6C6DC01C706299002EA3E7 /* PBXTargetDependency */,
+			);
+			name = GraduationDesignTests;
+			productName = GraduationDesignTests;
+			productReference = BE6C6DBE1C706299002EA3E7 /* GraduationDesignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE6C6DC81C706299002EA3E7 /* GraduationDesignUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6C6DD81C706299002EA3E7 /* Build configuration list for PBXNativeTarget "GraduationDesignUITests" */;
+			buildPhases = (
+				BE6C6DC51C706299002EA3E7 /* Sources */,
+				BE6C6DC61C706299002EA3E7 /* Frameworks */,
+				BE6C6DC71C706299002EA3E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE6C6DCB1C706299002EA3E7 /* PBXTargetDependency */,
+			);
+			name = GraduationDesignUITests;
+			productName = GraduationDesignUITests;
+			productReference = BE6C6DC91C706299002EA3E7 /* GraduationDesignUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE6C6D9D1C706298002EA3E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Apress;
+				TargetAttributes = {
+					BE6C6DA41C706298002EA3E7 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = MJ3XMKL67Y;
+					};
+					BE6C6DBD1C706299002EA3E7 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = MJ3XMKL67Y;
+						TestTargetID = BE6C6DA41C706298002EA3E7;
+					};
+					BE6C6DC81C706299002EA3E7 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = MJ3XMKL67Y;
+						TestTargetID = BE6C6DA41C706298002EA3E7;
+					};
+				};
+			};
+			buildConfigurationList = BE6C6DA01C706298002EA3E7 /* Build configuration list for PBXProject "GraduationDesign" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE6C6D9C1C706298002EA3E7;
+			productRefGroup = BE6C6DA61C706298002EA3E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE6C6DA41C706298002EA3E7 /* GraduationDesign */,
+				BE6C6DBD1C706299002EA3E7 /* GraduationDesignTests */,
+				BE6C6DC81C706299002EA3E7 /* GraduationDesignUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE6C6DA31C706298002EA3E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6C6DB81C706299002EA3E7 /* LaunchScreen.storyboard in Resources */,
+				BE6C6DB51C706299002EA3E7 /* Assets.xcassets in Resources */,
+				BE6C6DB31C706299002EA3E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6C6DBC1C706299002EA3E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6C6DC71C706299002EA3E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26D1C819D857D914D5495FE1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA6F5648E5308AFEF5FC5E07 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED7A964870017D6FFE32D814 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE6C6DA11C706298002EA3E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6C6DDF1C706415002EA3E7 /* LoginViewController.m in Sources */,
+				BE6C6DB01C706299002EA3E7 /* ViewController.m in Sources */,
+				BE6C6DAD1C706299002EA3E7 /* AppDelegate.m in Sources */,
+				BE6C6DAA1C706298002EA3E7 /* main.m in Sources */,
+				BE6C6DE01C706415002EA3E7 /* SignupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6C6DBA1C706299002EA3E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6C6DC31C706299002EA3E7 /* GraduationDesignTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6C6DC51C706299002EA3E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6C6DCE1C706299002EA3E7 /* GraduationDesignUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE6C6DC01C706299002EA3E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE6C6DA41C706298002EA3E7 /* GraduationDesign */;
+			targetProxy = BE6C6DBF1C706299002EA3E7 /* PBXContainerItemProxy */;
+		};
+		BE6C6DCB1C706299002EA3E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE6C6DA41C706298002EA3E7 /* GraduationDesign */;
+			targetProxy = BE6C6DCA1C706299002EA3E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE6C6DB11C706299002EA3E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE6C6DB21C706299002EA3E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE6C6DB61C706299002EA3E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE6C6DB71C706299002EA3E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE6C6DD01C706299002EA3E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE6C6DD11C706299002EA3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE6C6DD31C706299002EA3E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F2D25BFA8DDA1D4F8BB5134 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GraduationDesign/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apress.GraduationDesign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE6C6DD41C706299002EA3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11B534068802C3E424ADCBB /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GraduationDesign/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apress.GraduationDesign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE6C6DD61C706299002EA3E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GraduationDesignTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apress.GraduationDesignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraduationDesign.app/GraduationDesign";
+			};
+			name = Debug;
+		};
+		BE6C6DD71C706299002EA3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GraduationDesignTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apress.GraduationDesignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraduationDesign.app/GraduationDesign";
+			};
+			name = Release;
+		};
+		BE6C6DD91C706299002EA3E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GraduationDesignUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apress.GraduationDesignUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GraduationDesign;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BE6C6DDA1C706299002EA3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GraduationDesignUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apress.GraduationDesignUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GraduationDesign;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE6C6DA01C706298002EA3E7 /* Build configuration list for PBXProject "GraduationDesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6C6DD01C706299002EA3E7 /* Debug */,
+				BE6C6DD11C706299002EA3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6C6DD21C706299002EA3E7 /* Build configuration list for PBXNativeTarget "GraduationDesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6C6DD31C706299002EA3E7 /* Debug */,
+				BE6C6DD41C706299002EA3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6C6DD51C706299002EA3E7 /* Build configuration list for PBXNativeTarget "GraduationDesignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6C6DD61C706299002EA3E7 /* Debug */,
+				BE6C6DD71C706299002EA3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6C6DD81C706299002EA3E7 /* Build configuration list for PBXNativeTarget "GraduationDesignUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6C6DD91C706299002EA3E7 /* Debug */,
+				BE6C6DDA1C706299002EA3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE6C6D9D1C706298002EA3E7 /* Project object */;
+}
