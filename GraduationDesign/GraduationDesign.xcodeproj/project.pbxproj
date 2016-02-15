@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE3F472E1C71AAA30093E8A4 /* ModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3F472D1C71AAA30093E8A4 /* ModifyPasswordViewController.m */; };
 		BE6C6DAA1C706298002EA3E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DA91C706298002EA3E7 /* main.m */; };
 		BE6C6DAD1C706299002EA3E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DAC1C706299002EA3E7 /* AppDelegate.m */; };
 		BE6C6DB01C706299002EA3E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DAF1C706299002EA3E7 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 		BE6C6DCE1C706299002EA3E7 /* GraduationDesignUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DCD1C706299002EA3E7 /* GraduationDesignUITests.m */; };
 		BE6C6DDF1C706415002EA3E7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DDC1C706415002EA3E7 /* LoginViewController.m */; };
 		BE6C6DE01C706415002EA3E7 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DDE1C706415002EA3E7 /* SignupViewController.m */; };
+		BE6C6DE31C70709B002EA3E7 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DE21C70709B002EA3E7 /* MainTabBarController.m */; };
 		EBEEF9672934E32CD3884081 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7851071021E052606C4B1437 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		7851071021E052606C4B1437 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2D25BFA8DDA1D4F8BB5134 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BE3F472C1C71AAA30093E8A4 /* ModifyPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyPasswordViewController.h; sourceTree = "<group>"; };
+		BE3F472D1C71AAA30093E8A4 /* ModifyPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyPasswordViewController.m; sourceTree = "<group>"; };
 		BE6C6DA51C706298002EA3E7 /* GraduationDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraduationDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6C6DA91C706298002EA3E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE6C6DAB1C706299002EA3E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		BE6C6DDC1C706415002EA3E7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BE6C6DDD1C706415002EA3E7 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		BE6C6DDE1C706415002EA3E7 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		BE6C6DE11C70709B002EA3E7 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		BE6C6DE21C70709B002EA3E7 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		D11B534068802C3E424ADCBB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,10 +145,10 @@
 				BE6C6DAF1C706299002EA3E7 /* ViewController.m */,
 				BE6C6DDD1C706415002EA3E7 /* SignupViewController.h */,
 				BE6C6DDE1C706415002EA3E7 /* SignupViewController.m */,
-				BE6C6DB11C706299002EA3E7 /* Main.storyboard */,
-				BE6C6DB41C706299002EA3E7 /* Assets.xcassets */,
-				BE6C6DB61C706299002EA3E7 /* LaunchScreen.storyboard */,
-				BE6C6DB91C706299002EA3E7 /* Info.plist */,
+				BE3F472C1C71AAA30093E8A4 /* ModifyPasswordViewController.h */,
+				BE3F472D1C71AAA30093E8A4 /* ModifyPasswordViewController.m */,
+				BE6C6DE11C70709B002EA3E7 /* MainTabBarController.h */,
+				BE6C6DE21C70709B002EA3E7 /* MainTabBarController.m */,
 				BE6C6DA81C706298002EA3E7 /* Supporting Files */,
 			);
 			path = GraduationDesign;
@@ -151,6 +157,10 @@
 		BE6C6DA81C706298002EA3E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BE6C6DB91C706299002EA3E7 /* Info.plist */,
+				BE6C6DB61C706299002EA3E7 /* LaunchScreen.storyboard */,
+				BE6C6DB11C706299002EA3E7 /* Main.storyboard */,
+				BE6C6DB41C706299002EA3E7 /* Assets.xcassets */,
 				BE6C6DA91C706298002EA3E7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -358,8 +368,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE3F472E1C71AAA30093E8A4 /* ModifyPasswordViewController.m in Sources */,
 				BE6C6DDF1C706415002EA3E7 /* LoginViewController.m in Sources */,
 				BE6C6DB01C706299002EA3E7 /* ViewController.m in Sources */,
+				BE6C6DE31C70709B002EA3E7 /* MainTabBarController.m in Sources */,
 				BE6C6DAD1C706299002EA3E7 /* AppDelegate.m in Sources */,
 				BE6C6DAA1C706298002EA3E7 /* main.m in Sources */,
 				BE6C6DE01C706415002EA3E7 /* SignupViewController.m in Sources */,

@@ -22,11 +22,10 @@
     [AVOSCloud setApplicationId:@"MtQhcq1bFLHv3Wgg0Fv08Dai-gzGzoHsz"
                       clientKey:@"PyiGpceYq16O8jtsFPHkdyKT"];
     
-    AVObject *post = [AVObject objectWithClassName:@"Post"];
-    [post setObject:@"每个 Objective-C 程序员必备的 8 个开发工具" forKey:@"content"];
-    [post setObject:@"LeanCloud官方客服" forKey:@"pubUser"];
-    [post setObject:[NSNumber numberWithInt:1435541999] forKey:@"pubTimestamp"];
-    [post save];
+//    AVObject *post = [AVObject objectWithClassName:@"UserPassword"];
+//    [post setObject:@"xiziwen" forKey:@"account"];
+//    [post setObject:@"111111" forKey:@"password"];
+//    [post save];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.loginViewController = [[LoginViewController alloc] initWithNibName:nil bundle:nil];

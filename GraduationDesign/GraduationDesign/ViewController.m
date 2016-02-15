@@ -7,13 +7,17 @@
 //
 
 #import "ViewController.h"
+#import <AVOSCloud/AVOSCloud.h>
 #import "Masonry.h"
 #import "SignupViewController.h"
+#import "MainTabBarController.h"
 
 @interface ViewController ()
 
 @property (nonatomic , strong) UITextField* tfAccount;
 @property (nonatomic , strong) UITextField* tfPwd;
+
+@property (nonatomic , strong) UIAlertController* alertController;
 
 @end
 
@@ -63,7 +67,7 @@
     self.tfAccount.placeholder = @"请输入手机号";
     self.tfAccount.translatesAutoresizingMaskIntoConstraints = NO;
     self.tfAccount.autocorrectionType = UITextAutocorrectionTypeNo;
-    self.tfAccount.keyboardType = UIKeyboardTypeNumberPad;
+    //self.tfAccount.keyboardType = UIKeyboardTypeNumberPad;
     self.tfAccount.delegate = self;
     self.tfAccount.backgroundColor=[UIColor whiteColor];
     [viewAccountPassword addSubview:self.tfAccount];
@@ -76,7 +80,7 @@
     self.tfPwd.translatesAutoresizingMaskIntoConstraints = NO;
     self.tfPwd.secureTextEntry = YES;     //每输入一个字符就变成点 用于密码输入
     self.tfPwd.autocorrectionType = UITextAutocorrectionTypeNo;
-    self.tfPwd.returnKeyType = UIReturnKeyGo;
+    //self.tfPwd.returnKeyType = UIReturnKeyGo;
     self.tfPwd.delegate = self;
     self.tfPwd.backgroundColor=[UIColor whiteColor];
     [viewAccountPassword addSubview:self.tfPwd];
@@ -89,6 +93,7 @@
     btnLogin.layer.cornerRadius = 4.0;
     [btnLogin addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     btnLogin.clipsToBounds = YES;
+    btnLogin.tag = @"login";
     [self.view addSubview:btnLogin];
     
     UIButton* btnSignup = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -167,6 +172,43 @@
 
 
 -(void)buttonClicked:(UIButton*)sender{
+    if (sender.tag == @"login") {
+        
+//        AVQuery *lotsOfWins = [AVQuery queryWithClassName:@"UserPassword"];
+//        [lotsOfWins whereKey:@"account" equalTo:self.tfAccount.text];
+//        
+//        AVQuery *fewWins = [AVQuery queryWithClassName:@"UserPassword"];
+//        [fewWins whereKey:@"password" equalTo:self.tfPwd.text];
+//        
+//        AVQuery *query = [AVQuery orQueryWithSubqueries:[NSArray arrayWithObjects:fewWins,lotsOfWins,nil]];
+//        [query findObjectsInBackgroundWithBlock:^(NSArray *results, NSError *error) {
+//            if([results objectAtIndex:0]!=nil){
+//                MainTabBarController *vv = [[MainTabBarController alloc] init];
+//                [self.navigationController pushViewController:vv animated:YES];
+//                NSLog(@"%@",error);
+//            }
+//            else{
+//                NSLog(@"cdscv");
+//            }
+//        }];
+        
+        [AVUser logInWithUsernameInBackground:self.tfAccount.text password:self.tfPwd.text block:^(AVUser *user, NSError *error) {
+            if (user != nil) {
+                
+                MainTabBarController *vv = [[MainTabBarController alloc] init];
+                [self.navigationController pushViewController:vv animated:YES];
+                
+            } else {
+                
+                self.alertController = [UIAlertController alertControllerWithTitle:@"标题" message:@"登录失败" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+                [self.alertController addAction:okAction];
+                [self presentViewController:self.alertController animated:YES completion:nil];
+                
+            }
+        }];
+
+    }
     if (sender.tag == @"Signup"){
         SignupViewController *vv = [[SignupViewController alloc] init];
         [self.navigationController pushViewController:vv animated:YES];
