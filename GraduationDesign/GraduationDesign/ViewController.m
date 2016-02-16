@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import <AVOSCloud/AVOSCloud.h>
-#import "Masonry.h"
+
 #import "SignupViewController.h"
+#import "ModifyPasswordViewController.h"
 #import "MainTabBarController.h"
 
 @interface ViewController ()
@@ -93,7 +93,7 @@
     btnLogin.layer.cornerRadius = 4.0;
     [btnLogin addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     btnLogin.clipsToBounds = YES;
-    btnLogin.tag = @"login";
+    btnLogin.tag = UIControllTagBtnLogin;
     [self.view addSubview:btnLogin];
     
     UIButton* btnSignup = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -112,7 +112,7 @@
     [btnFindPwd setTitle:@"忘记密码" forState:UIControlStateNormal];
     [btnFindPwd setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btnFindPwd setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
-    btnFindPwd.tag=@"de";
+    btnFindPwd.tag=@"modifypsd";
     [btnFindPwd addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnFindPwd];
     
@@ -172,7 +172,7 @@
 
 
 -(void)buttonClicked:(UIButton*)sender{
-    if (sender.tag == @"login") {
+    if (sender.tag == UIControllTagBtnLogin) {
         
 //        AVQuery *lotsOfWins = [AVQuery queryWithClassName:@"UserPassword"];
 //        [lotsOfWins whereKey:@"account" equalTo:self.tfAccount.text];
@@ -212,6 +212,10 @@
     if (sender.tag == @"Signup"){
         SignupViewController *vv = [[SignupViewController alloc] init];
         [self.navigationController pushViewController:vv animated:YES];
+    }
+    if (sender.tag == @"modifypsd") {
+        ModifyPasswordViewController *vc = [[ModifyPasswordViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

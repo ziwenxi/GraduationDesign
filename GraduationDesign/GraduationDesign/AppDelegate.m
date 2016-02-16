@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
-#import <AVOSCloud/AVOSCloud.h>
 
 @interface AppDelegate ()
 
