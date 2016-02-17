@@ -10,7 +10,7 @@
 
 #import "SignupViewController.h"
 #import "ModifyPasswordViewController.h"
-#import "MainTabBarController.h"
+
 
 @interface ViewController ()
 
@@ -194,10 +194,7 @@
         
         [AVUser logInWithUsernameInBackground:self.tfAccount.text password:self.tfPwd.text block:^(AVUser *user, NSError *error) {
             if (user != nil) {
-                
-                MainTabBarController *vv = [[MainTabBarController alloc] init];
-                [self.navigationController pushViewController:vv animated:YES];
-                
+                NSLog(@"success");
             } else {
                 
                 self.alertController = [UIAlertController alertControllerWithTitle:@"标题" message:@"登录失败" preferredStyle:UIAlertControllerStyleAlert];

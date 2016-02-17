@@ -11,6 +11,8 @@
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic) UIViewController* viewController;
+
 @end
 
 @implementation AppDelegate
@@ -21,11 +23,6 @@
     [AVOSCloud setApplicationId:@"MtQhcq1bFLHv3Wgg0Fv08Dai-gzGzoHsz"
                       clientKey:@"PyiGpceYq16O8jtsFPHkdyKT"];
     
-//    AVObject *post = [AVObject objectWithClassName:@"UserPassword"];
-//    [post setObject:@"xiziwen" forKey:@"account"];
-//    [post setObject:@"111111" forKey:@"password"];
-//    [post save];
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.loginViewController = [[LoginViewController alloc] initWithNibName:nil bundle:nil];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:self.loginViewController];
@@ -33,6 +30,7 @@
     
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

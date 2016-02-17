@@ -19,7 +19,7 @@
 		BE6C6DCE1C706299002EA3E7 /* GraduationDesignUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DCD1C706299002EA3E7 /* GraduationDesignUITests.m */; };
 		BE6C6DDF1C706415002EA3E7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DDC1C706415002EA3E7 /* LoginViewController.m */; };
 		BE6C6DE01C706415002EA3E7 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DDE1C706415002EA3E7 /* SignupViewController.m */; };
-		BE6C6DE31C70709B002EA3E7 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C6DE21C70709B002EA3E7 /* MainTabBarController.m */; };
+		BEF74BD81C7350DA008F8086 /* RDVTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF74BD71C7350DA008F8086 /* RDVTabBarViewController.m */; };
 		EBEEF9672934E32CD3884081 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7851071021E052606C4B1437 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,8 +68,8 @@
 		BE6C6DDC1C706415002EA3E7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BE6C6DDD1C706415002EA3E7 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		BE6C6DDE1C706415002EA3E7 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
-		BE6C6DE11C70709B002EA3E7 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
-		BE6C6DE21C70709B002EA3E7 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		BEF74BD61C7350DA008F8086 /* RDVTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarViewController.h; sourceTree = "<group>"; };
+		BEF74BD71C7350DA008F8086 /* RDVTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarViewController.m; sourceTree = "<group>"; };
 		D11B534068802C3E424ADCBB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,8 +159,8 @@
 				BE6C6DDE1C706415002EA3E7 /* SignupViewController.m */,
 				BE3F472C1C71AAA30093E8A4 /* ModifyPasswordViewController.h */,
 				BE3F472D1C71AAA30093E8A4 /* ModifyPasswordViewController.m */,
-				BE6C6DE11C70709B002EA3E7 /* MainTabBarController.h */,
-				BE6C6DE21C70709B002EA3E7 /* MainTabBarController.m */,
+				BEF74BD61C7350DA008F8086 /* RDVTabBarViewController.h */,
+				BEF74BD71C7350DA008F8086 /* RDVTabBarViewController.m */,
 				BE3F47381C71D43E0093E8A4 /* Constants.h */,
 				BE3F47391C71D43E0093E8A4 /* Constants.m */,
 				BE6C6DA81C706298002EA3E7 /* Supporting Files */,
@@ -386,8 +386,8 @@
 				BE3F472E1C71AAA30093E8A4 /* ModifyPasswordViewController.m in Sources */,
 				BE6C6DDF1C706415002EA3E7 /* LoginViewController.m in Sources */,
 				BE6C6DB01C706299002EA3E7 /* ViewController.m in Sources */,
+				BEF74BD81C7350DA008F8086 /* RDVTabBarViewController.m in Sources */,
 				BE3F473A1C71D43E0093E8A4 /* Constants.m in Sources */,
-				BE6C6DE31C70709B002EA3E7 /* MainTabBarController.m in Sources */,
 				BE6C6DAD1C706299002EA3E7 /* AppDelegate.m in Sources */,
 				BE6C6DAA1C706298002EA3E7 /* main.m in Sources */,
 				BE6C6DE01C706415002EA3E7 /* SignupViewController.m in Sources */,
