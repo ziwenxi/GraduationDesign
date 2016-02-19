@@ -9,9 +9,10 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 
-@interface AppDelegate ()
+#import "RDVTabBarController.h"
+#import "RDVTabBarItem.h"
 
-@property (strong, nonatomic) UIViewController* viewController;
+@interface AppDelegate ()
 
 @end
 
@@ -24,13 +25,51 @@
                       clientKey:@"PyiGpceYq16O8jtsFPHkdyKT"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.loginViewController = [[LoginViewController alloc] initWithNibName:nil bundle:nil];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:self.loginViewController];
+    [self setupViewControllers];
+    [self.window setRootViewController:self.viewController];
     [self.window makeKeyAndVisible];
     
     return YES;
 }
 
+- (void)setupViewControllers {
+    
+    UIViewController *firstViewController = [[LoginViewController alloc] init];
+    //firstViewController.title = NSLocalizedString(@"sdc", nil);
+    UIViewController *firstNavigationController = [[UINavigationController alloc]
+                                                   initWithRootViewController:firstViewController];
+    
+    UIViewController *secondViewController = [[UIViewController alloc] init];
+    UIViewController *secondNavigationController = [[UINavigationController alloc]
+                                                    initWithRootViewController:secondViewController];
+    
+    UIViewController *thirdViewController = [[UIViewController alloc] init];
+    UIViewController *thirdNavigationController = [[UINavigationController alloc]
+                                                   initWithRootViewController:thirdViewController];
+    
+    RDVTabBarController *tabBarController = [[RDVTabBarController alloc] init];
+    [tabBarController setViewControllers:@[firstNavigationController, secondNavigationController,
+                                           thirdNavigationController]];
+    
+    self.viewController = tabBarController;
+    
+    
+    UIImage *finishedImage = [UIImage imageNamed:@"tabbar_selected_background"];
+    UIImage *unfinishedImage = [UIImage imageNamed:@"tabbar_normal_background"];
+    NSArray *tabBarItemImages = @[@"first", @"second", @"third"];
+    
+    NSInteger index = 0;
+    for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
+        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
+        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_selected",
+                                                      [tabBarItemImages objectAtIndex:index]]];
+        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_normal",
+                                                        [tabBarItemImages objectAtIndex:index]]];
+        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        
+        index++;
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

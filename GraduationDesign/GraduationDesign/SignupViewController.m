@@ -7,7 +7,6 @@
 //
 
 #import "SignupViewController.h"
-#import "RDVTabBarViewController.h"
 
 @interface SignupViewController ()
 
@@ -284,14 +283,12 @@
                 [self.alertController addAction:okAction];
                 [self presentViewController:self.alertController animated:YES completion:nil];
             } else {
-//                NSLog(@"error");
-//                self.alertController = [UIAlertController alertControllerWithTitle:@"标题" message:@"账户或email不唯一" preferredStyle:UIAlertControllerStyleAlert];
-//                UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
-//                [self.alertController addAction:okAction];
-//                [self presentViewController:self.alertController animated:YES completion:nil];
+                NSLog(@"error");
+                self.alertController = [UIAlertController alertControllerWithTitle:@"标题" message:@"账户或email不唯一" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+                [self.alertController addAction:okAction];
+                [self presentViewController:self.alertController animated:YES completion:nil];
                 
-                RDVTabBarViewController *vv = [[RDVTabBarViewController alloc] init];
-                [self.navigationController pushViewController:vv animated:YES];
             }
         }];
     }
